@@ -1,0 +1,28 @@
+/* Header Styling */
+header {
+    background-color: #252525;
+    color: #EBEBEB;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav {
+    background-color: #252525;
+}
+
+/* Body Styling */
+body {
+    font-family: sans-serif;
+    font-size: 16px; /* Default font size */
+    color: #EBEBEB; /* Main text color */
+    background-color: #252525;
+    background-image: url('images/chalkboardwallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #252525;
+}
