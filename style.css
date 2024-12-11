@@ -1,28 +1,99 @@
-/* Header Styling */
-header {
-    background-color: #252525;
-    color: #EBEBEB;
-    text-align: center;
-    padding: 20px 0;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and borders are included in element width/height */
 }
 
-nav {
-    background-color: #252525;
+/* Header Styling */
+header { /* Header alignment, spacing, and color stuff. */
+    background-color: #121212;
+    color: #EBEBEB;
+    text-align: center;
+    padding: 100px 0 50px;
+    width: 100%;
+    position: relative;
+    outline: 2px solid #947e0c;
+    margin: 0 0 20px;
+}
+
+header img { /* Adds space around the logo, centers it, and keeps the size of the image fixed. */
+    display: block;
+    margin: 20px auto 0; 
+    width: 150px; 
+    height: auto; 
+}
+
+nav ul { /* Aligns and centers the navigation elements at the top of the page. */
+    list-style-type: none;
+    background-color: #947e0c;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li { /* Adds spacing between navigation items. */
+    margin: 0 15px; 
+}
+
+nav a { /* Creates space in the navigation bar at the top of the page so that the links are cluttered. */
+    display: block;
+    color: #EBEBEB;
+    text-decoration: none;
+    padding: 20px;
+}
+
+nav a:hover { /* Changes the color of the navigation element at the top of the page when the mouse hovers over it. */
+    background-color: #94590c;
+    color: #EBEBEB;
+}
+
+nav .active { /* Indicates the current page being viewed by changing the corresponding navigation element at the top of the page. */
+    background-color: #94170c;
+    color: #EBEBEB
+}
+
+nav { /* Keeps the navigation elements at the top of the page. */
+    top: 0;
+    position: absolute;
+    width: 100%;
 }
 
 /* Body Styling */
 body {
     font-family: sans-serif;
-    font-size: 16px; /* Default font size */
-    color: #EBEBEB; /* Main text color */
-    background-color: #252525;
+    font-size: 16px;
+    color: #EBEBEB;
+    background-color: #121212;
     background-image: url('images/chalkboardwallpaper.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 { /* Adds space below headings */
+    margin-bottom: 1rem; 
+}
+
+p {  /* Adds space between paragraphs and indents text. */
+    padding-left: 1.5rem;
+    margin-bottom: 1.2rem;
+}
+
+ol, ul { /* Adds space and indents lists. */
+    margin: 1rem 0;
+    padding-left: 3.5rem;
 }
 
 /* Footer Styling */
 footer {
-    background-color: #252525;
+    background-color: #121212;
+    width: 100%;
+    outline: 2px solid #947e0c;
+    text-align: center;
 }
