@@ -18,25 +18,75 @@
 
 <body>
         <header>
-            <h1>Welcome to Bee Literate!</h1>
+            <h1>Bee Literate: The Fun of Literacy for Kids!</h1>
+            <img src="images/logo.png" alt="Bee Literate Logo">
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="whyreadandwrite.html">Why Read and Write?</a></li>
-                    <li><a href="tipsandtricks.html">Tips and Tricks</a></li>
-                    <li><a href="funstuff.html">Fun Stuff</a></li>
-                    <li><a href="policy.html">Policy</a></li>
+                    <li><a href="index.html">Home</a></li> <!-- Link to Home page in header. -->
+                    <li><a href="whyreadandwrite.html" class="active">Why Read and Write?</a></li> <!--NOTE: Class is used here over HTML element selector due to me wanting to have the page that the user is currently viewing to be visually indicated by changing the color of the navigation tab at the top of the page. --> <!-- Link to Why Read and Write? page in header. -->
+                    <li><a href="tipsandtricks.html">Tips and Tricks</a></li> <!-- Link to Tips and Tricks page in header. -->
+                    <li><a href="funstuff.html">Fun Stuff</a></li> <!-- Link to Fun Stuff in header. -->
+                    <li><a href="policy.html">Policy</a></li> <!-- Link to Policy page in header. -->
                 </ul>
             </nav>
         </header>
         <main>
-            <p>Being literate is a very important thing for each and every one of us.  Just think of all of the things that we need reading and writing for!
-
-                On this website, you can learn all about the joy of being literate.  Whether you’re a beginner or a more experienced reader, there’s  something for everyone here! Some things you’ll find on this site include:
+            <h2>Why Read and Write?</h2>
+            <p>Being able to read and write are some of the most important skills that you’ll ever learn.
+               Sure, you need to be able to read and write well to get good grades, but being able to read and write opens up so many different worlds to you!
+            </p>
+            <h3>Books</h3>
+            <div class="image-container"> <!-- Using div elements so that I can target the two groups of figure images easier so that I can have them arranged next to each other on the page. -->
+                <figure> <!-- Put the images into containers so that I can put the image credits underneath them easily and also assist screen readers. -->
+                    <img src="images/bookthecatinthehat.jpg" alt="Cat in the Hat Book Scan">
+                    <figcaption>
+                        Image Credit: Jackstrebor. (2016, May 5). <i>The Cat in the Hat</i>. 
+                        <a href="https://seussblog.wordpress.com/2013/01/27/cat-in-the-hat/" target="_blank">Seussblog</a>.
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/bookthegivingtree.jpg" alt="The Giving Tree Book Scan">
+                    <figcaption>
+                        Image Credit: Wicaksana, S. (2010, February 27). <i>The Giving Tree</i>. 
+                        <a href="https://www.slideshare.net/wicaksana/the-giving-tree-3293089" target="_blank">SlideShare.</a>
+                    </figcaption>
+                </figure>
+            </div>    
+                <p>Being able to read can take you to different places! Imagine opening up a book and reading about a cat wearing a funny hat and the silly things that he gets up to! 
+                    What about a boy and a talking tree? A brave knight on a quest to save the princess from an evil monster? Books can take us all kinds of places!
+                </p>
+            <h3>Video Games</h3>
+            <div class="image-container">
+                <figure>
+                    <img src="images/gamemother3.png" alt="Mother 3 Video Game Screenshot">
+                    <figcaption>
+                    Image Credit: FantasyAnime (n.d.). <i>Mother 3</i>. 
+                    <a href="https://fantasyanime.com/legacy/earthb_shots-mother3.htm" target="_blank">FantasyAnime.</a>
+                </figcaption>
+                </figure>
+                <figure>
+                <img src="images/gamethepluckysquire.jpg" alt="The Plucky Squire Video Game Screenshot">
+                <figcaption>
+                    Image Credit: Walker, R. (2024, August 15). <i>The Plucky Squire</i>. 
+                    <a href="https://www.playstationtrophies.org/news/the-plucky-squire-september-release-date-playstation-plus/" target="_blank">Playstation Trophies.</a>
+                </figcaption>
+                </figure>
+            </div>    
+            <p>There are many video games out there that need you to be able to read in order to figure out how to move forward in them. 
+                Being able to read lets you follow the stories, figure out what characters are saying, and even get through menus! 
+                Without reading, you may end up missing out on a lot from your favorite game.
+            </p>
+            <h3>But Why Learn It?</h3>
+            <p>While it’s nice to be able to enjoy things like books and video games, you can also create your own work such as a story or a comic book by knowing how to read and write. This lets you show off your creativity and make something fun for others to enjoy! 
+                These skills also help in the grown up world when you end up working a job and have to talk to people a lot!
             </p>
         </main>
         <footer>
-
+            <p>&copy; 2024 Bee Literate. All rights reserved.</p>
+            <small>
+                <p>Page generated on: <span id="pageGenerated"></span></p>
+            </small>
+            <script src="pagegenerated.js"></script> <!-- Generates the current time and date when the page was loaded.-->
         </footer>
 </body>
 

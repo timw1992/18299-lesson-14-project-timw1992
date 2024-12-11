@@ -1,8 +1,8 @@
 
-* {
+* {  /* Had to do this because the header and footer weren't taking up the whole width of the page. */
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Ensures padding and borders are included in element width/height */
+    box-sizing: border-box;
 }
 
 /* Header Styling */
@@ -76,13 +76,41 @@ body {
     line-height: 1.6;
 }
 
-h1, h2, h3, h4, h5, h6 { /* Adds space below headings */
+h1, h2, h3, h4, h5, h6 { /* Adds space below headings and indents the text. */
+    padding-left: 1.5rem;
     margin-bottom: 1rem; 
 }
 
-p {  /* Adds space between paragraphs and indents text. */
+p {  /* Adds space between paragraphs and indents the text. */
     padding-left: 1.5rem;
     margin-bottom: 1.2rem;
+}
+
+img {  /* Same as above, but for images, and also ensures that images don't overflow. */
+    padding-left: 1.5rem;
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption {  /* Same as above, but for figcaptions. Also adjusts font size. */
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.8rem;
+}
+
+.image-container { /* Used to keep the images in the figcontainers next to each other horizontally on the page. */
+    display: flex;
+    gap: 20px;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+
 }
 
 ol, ul { /* Adds space and indents lists. */
