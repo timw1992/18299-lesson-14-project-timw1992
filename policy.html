@@ -17,23 +17,39 @@
 </head>
 
 <body>
-        <header>
-            <h1>Welcome to Bee Literate!</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="whyreadandwrite.html">Why Read and Write?</a></li>
-                    <li><a href="tipsandtricks.html">Tips and Tricks</a></li>
-                    <li><a href="funstuff.html">Fun Stuff</a></li>
-                    <li><a href="policy.html">Policy</a></li>
-                </ul>
-            </nav>
-        </header>
+    <header>
+        <h1>Bee Literate: The Fun of Literacy for Kids!</h1>
+        <img src="images/logo.png" alt="Bee Literate Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li> <!-- Link to Home page in header. -->
+                <li><a href="whyreadandwrite.html">Why Read and Write?</a></li> <!-- Link to Why Read and Write? page in header. -->
+                <li><a href="tipsandtricks.html">Tips and Tricks</a></li> <!-- Link to Tips and Tricks page in header. -->
+                <li><a href="funstuff.html">Fun Stuff</a></li> <!-- Link to Fun Stuff in header. -->
+                <li><a href="policy.html" class="active">Policy</a></li> <!--NOTE: Class is used here over HTML element selector due to me wanting to have the page that the user is currently viewing to be visually indicated by changing the color of the navigation tab at the top of the page. --> <!-- Link to Policy page in header. -->
+            </ul>
+        </nav>
+    </header>
         <main>
-            <p>Policy page.</p>
+            <h3>Site Purpose</h3>
+            <p>We here at Bee Literate have dedicated this website to encourage young learners to embrace the power of reading and writing. 
+                Our goal is to show students that literacy can be a fruitful and enjoyable endeavour and provide useful and accessible resources that help children develop essential skills. 
+                We believe that reading and writing aren’t just tools for school or work, but are also the key to creativity, exploring new worlds, and enjoying life in general. 
+                We hope to make learning both rewarding and entertaining for children everywhere.</p>
+            <h3>Accessibility Statement</h3>
+            <p>We are committed to ensuring that all users, including those with disabilities, are able to access and navigate our website with ease. 
+                We strive to meet the accessibility standards set forth by the Web Content Accessibility Guidelines (WCAG) to provide an inclusive and user-friendly experience for everyone.</p>
+            <h3>Privacy Policy</h3>
+            <p>Bee Literate is dedicated to protecting the privacy and safety of all of its users, especially children. 
+                We do not collect any personal information from visitors to our website unless explicitly provided through forms or other submission methods.  
+                We do not share or sell any personal information to third parties.</p>
         </main>
         <footer>
-
+            <p>&copy; 2024 Bee Literate. All rights reserved.</p>
+            <small>
+                <p>Page generated on: <span id="pageGenerated"></span></p>
+            </small>
+            <script src="pagegenerated.js"></script> <!-- Generates the current time and date when the page was loaded.-->
         </footer>
 </body>
 

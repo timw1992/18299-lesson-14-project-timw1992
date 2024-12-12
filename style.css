@@ -53,7 +53,11 @@ nav a:hover { /* Changes the color of the navigation element at the top of the p
 
 nav .active { /* Indicates the current page being viewed by changing the corresponding navigation element at the top of the page. */
     background-color: #94170c;
-    color: #EBEBEB
+    color: #EBEBEB;
+}
+
+nav a:visited { /* Prevents the links in the navigation area from turning purple once they've been visited. */
+    color: #EBEBEB;
 }
 
 nav { /* Keeps the navigation elements at the top of the page. */
@@ -84,6 +88,23 @@ h1, h2, h3, h4, h5, h6 { /* Adds space below headings and indents the text. */
 p {  /* Adds space between paragraphs and indents the text. */
     padding-left: 1.5rem;
     margin-bottom: 1.2rem;
+}
+
+/* Link Color Properties */
+a { /* Changes all of the link state colors to a brighter color scheme to better contrast the website's dark background color. */
+    color: #0ec1fd;
+}
+
+a:visited {
+    color: #d399ff;
+}
+
+a:hover {
+    color: #85d9f4;
+}
+
+a:active {
+    color: #f68953;
 }
 
 img {  /* Same as above, but for images, and also ensures that images don't overflow. */
