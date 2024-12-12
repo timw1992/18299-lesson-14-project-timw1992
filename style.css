@@ -160,6 +160,7 @@ th, td {
 table {
     padding: 2.0rem;
 }
+
 /* Footer Styling */
 footer {
     background-color: #121212;
@@ -167,3 +168,75 @@ footer {
     outline: 2px solid #947e0c;
     text-align: center;
 }
+
+/* Mobile Design for Screens 449px or Smaller */
+@media (max-width: 449px) {
+
+    /* Mobile Header Styling */
+    header { /* Reduce the padding in the header. */
+        padding: 25px 0 50px;
+    }
+
+    header img { /* Creates more space below the header image. */
+        padding-bottom: 25px;
+    }
+
+    nav { /* Changes the position to relative because the navigation elements were overlapping the header. */
+        position: relative;
+    }
+
+    nav ul {  /* Changes the navigation elements to a vertical alignment to better fit a mobile view.*/
+        flex-direction: column;
+    }
+    
+    nav li {  /* Adds a bit of vertical spacing between the navigation links. */
+        margin: 5px 0;
+    }
+
+    nav a { /* Reduces the padding around the links. */
+        padding: 10px;
+    }
+
+    /* Mobile Body Styling */
+    body {
+        font-size: 14px; /* Slightly smaller font */
+        line-height: 1.5; /* Adjusted line height for compact space */
+        padding: 10px; /* Add space around the body */
+    }
+
+    h1, h2, h3, h4, h5, h6 { /* Removes the indentations and centers the headings.. */
+        padding-left: 0;
+        text-align: center;
+    }
+
+    p { /* Adjusts the alignment of <p> text elements on the page. */
+        padding: 1.0rem;
+        margin: 0;
+    }
+
+    ol, ul { /* Adjusts list elements to appear farther from the left of the page compared to regular text elements. */
+        padding-left: 2.5rem;
+        margin: 0;
+    }
+
+    form { /* Centers the form and makes it take up the full width of the page. */
+        margin: 0 auto;
+    }
+    form input, form textarea, form button { /* Makes the form fields and buttons take up more width and adds some spacing. */
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* Adjusted the table attributes so that the text is smaller and it doesn't overflow on mobile view. */
+
+    table { /* Prevents the table from being cut off horizontally on the page. */
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th, td { /* Adjusts the font and provides some quality of life functions to the way text appears. */
+        font-size: 12px;
+        padding: 1px;
+    }
+
+    /* Tablet viewports appeared fine under the regular desktop style, so I did not make a specific design for it. */
