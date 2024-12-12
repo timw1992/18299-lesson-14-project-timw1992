@@ -17,24 +17,100 @@
 </head>
 
 <body>
-        <header>
-            <h1>Welcome to Bee Literate!</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="whyreadandwrite.html">Why Read and Write?</a></li>
-                    <li><a href="tipsandtricks.html">Tips and Tricks</a></li>
-                    <li><a href="funstuff.html">Fun Stuff</a></li>
-                    <li><a href="policy.html">Policy</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <p>Fun stuff page.</p>
-        </main>
-        <footer>
-
-        </footer>
+    <header>
+        <h1>Bee Literate: The Fun of Literacy for Kids!</h1>
+        <img src="images/logo.png" alt="Bee Literate Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li> <!-- Link to Home page in header. -->
+                <li><a href="whyreadandwrite.html">Why Read and Write?</a></li> <!-- Link to Why Read and Write? page in header. -->
+                <li><a href="tipsandtricks.html">Tips and Tricks</a></li> <!-- Link to Tips and Tricks page in header. -->
+                <li><a href="funstuff.html" class="active">Fun Stuff</a></li> <!--NOTE: Class is used here over HTML element selector due to me wanting to have the page that the user is currently viewing to be visually indicated by changing the color of the navigation tab at the top of the page. --> <!-- Link to Fun Stuff in header. -->
+                <li><a href="policy.html">Policy</a></li> <!-- Link to Policy page in header. -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Fun Stuff</h2>
+        <p>There are so many different ways to have fun while getting better at reading and writing! 
+            On this web page, we’ll show you some of the coolest activities to help you improve your skills while having a good time. 
+            We also have a special form for you to share some of your favorite things with us! Check it out!</p>
+        <h3>Your Favorite Things</h3>
+        <figure> <!-- Put the images into containers so that I can put the image credits underneath them easily and also assist screen readers. -->
+            <img src="images/kidsthinking.jpg" alt="Artwork of kids thinking.">
+            <figcaption>
+                Image Credit: Clip Art Library. (n.d.). <i>Children Cartoon Pictures Clipart</i>. 
+                <a href="https://clipart-library.com/clipart/6Troy8nac.htm" target="_blank">Clip Art Library</a>.
+            </figcaption>
+        </figure>
+        <p>We have prepared a special form for you to share some of your favorite things with us! Please fill out the form below.</p>
+        <form action="https://secure.riosalado.edu/cis-course-resources/postscript.aspx" method="post">
+            <label for="favoritefood">What is your favorite food?</label>
+            <input type="text" name="FavoriteFood" id="favoritefood">
+            <br>
+            <label for="favoritecolor">What is your favorite color?</label>
+            <input type="text" name="FavoriteColor" id="favoritecolor">
+             <br>
+            <label for="favoritebook">What is your favorite book?</label>
+            <input type="text" name="FavoriteBook" id="favoritebook">
+            <br>
+            <label for="favoritetvshow">What is your favorite TV show?</label>
+            <input type="text" name="FavoriteTVShow" id="favoritetvshow">
+            <br>
+            <label for="favoritegame">What is your favorite game?</label>
+            <input type="text" name="FavoriteGame" id="favoritegame">
+            <br>
+            <br>
+          <button type="submit">Send</button>
+          <button type="reset">Start Over</button>
+          </form>
+          <figure>
+            <img src="images/favoritethings.png" alt="Artwork of the words, 'Favorite Things'.">
+            <figcaption>
+                Image Credit: Clip Art Library. (n.d.). <i>Favorite Things Clipart</i>. 
+                <a href="https://clipart-library.com/clipart/583403.htm" target="_blank">Clip Art Library</a>.
+            </figcaption>
+        </figure>
+        <p>Here's some favorite things of our own!</p>
+        <ul>
+            <li>Favorite Food: Steak</li>
+            <li>Favorite Color: Green</li>
+            <li>Favorite Book: Holes</li>
+            <li>Favorite TV Show: SpongeBob SquarePants</li>
+            <li>Favorite Game: EarthBound</li>
+        </ul>
+        <h3>Other Fun Websites for Reading and Writing</h3>
+        <table>
+            <tr>
+             <th>Name</th>
+             <th>About</th>
+             <th>Link</th>
+            </tr>
+            <tr>
+             <td>Scholastic Kids</td>
+             <td>Fun activities, book ideas, and more!</td>
+             <td><a href="https://kids.scholastic.com/kid/home/" target="_blank">https://kids.scholastic.com/kid/home/</a></td>
+            </tr>
+            <tr>
+             <td>National Geographic Kids</td>
+             <td>Educational articles and stories about nature and animals!</td>
+             <td><a href="https://kids.nationalgeographic.com/" target="_blank">https://kids.nationalgeographic.com/</a></td>
+            </tr>
+             <tr>
+             <td>Storyline Online</td>
+             <td>Popular people from TV shows, movies, and more reading books aloud for kids!</td>
+             <td><a href="https://storylineonline.net" target="_blank">https://storylineonline.net</a></td>
+            </tr>
+           </table>
+           <p>We hope that you check out some of these sites and have a good time!</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 Bee Literate. All rights reserved.</p>
+        <small>
+            <p>Page generated on: <span id="pageGenerated"></span></p>
+        </small>
+        <script src="pagegenerated.js"></script> <!-- Generates the current time and date when the page was loaded.-->
+    </footer>
 </body>
 
 </html>

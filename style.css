@@ -118,6 +118,27 @@ ol, ul { /* Adds space and indents lists. */
     padding-left: 3.5rem;
 }
 
+form {  /* Adjusts the form's alignment and adds a background color to it for better contrast against the background of the site. */
+    padding: 1.5rem;
+    margin: 1.5rem;
+    background-color: #121212;
+    max-width: 500px;
+    outline: 2px solid #947e0c;
+}
+
+th { /* Table coloring stuff and alignment. */
+    background-color: #94590c;
+  }
+  
+th, td {
+    border: solid #EBEBEB;
+    padding: 1.5rem;
+    margin: 1.5rem;
+  }
+
+table {
+    padding: 2.0rem;
+}
 /* Footer Styling */
 footer {
     background-color: #121212;
