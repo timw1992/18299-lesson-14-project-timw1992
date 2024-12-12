@@ -17,24 +17,68 @@
 </head>
 
 <body>
-        <header>
-            <h1>Welcome to Bee Literate!</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="whyreadandwrite.html">Why Read and Write?</a></li>
-                    <li><a href="tipsandtricks.html">Tips and Tricks</a></li>
-                    <li><a href="funstuff.html">Fun Stuff</a></li>
-                    <li><a href="policy.html">Policy</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <p>Tips and tricks page.</p>
-        </main>
-        <footer>
-
-        </footer>
+    <header>
+        <h1>Bee Literate: The Fun of Literacy for Kids!</h1>
+        <img src="images/logo.png" alt="Bee Literate Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li> <!-- Link to Home page in header. -->
+                <li><a href="whyreadandwrite.html">Why Read and Write?</a></li> <!-- Link to Why Read and Write? page in header. -->
+                <li><a href="tipsandtricks.html" class="active">Tips and Tricks</a></li> <!--NOTE: Class is used here over HTML element selector due to me wanting to have the page that the user is currently viewing to be visually indicated by changing the color of the navigation tab at the top of the page. --> <!-- Link to Tips and Tricks page in header. -->
+                <li><a href="funstuff.html">Fun Stuff</a></li> <!-- Link to Fun Stuff in header. -->
+                <li><a href="policy.html">Policy</a></li> <!-- Link to Policy page in header. -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Tips and Tricks</h2>
+        <p>Getting good at reading and writing doesn’t have to be hard or boring. 
+            There are plenty of fun and easy ways that you can practice to help you get better! 
+            Here are some tips and tricks to help you become a pro!</p>
+        <h3>Keep a Journal</h3>
+        <figure> <!-- Put the images into containers so that I can put the image credits underneath them easily and also assist screen readers. -->
+            <img src="images/boywriting.png" alt="Artwork of a boy writing into a book.">
+            <figcaption>
+                Image Credit: Hassan, M. (2024, September 17). <i>Boy, Learning, Study</i>. 
+                <a href="https://pixabay.com/illustrations/boy-learning-study-child-kid-9053203/" target="_blank">Pixabay</a>.
+            </figcaption>
+        </figure>
+        <p>You can keep a journal and use it to practice your writing skills. You can write about anything, such as your day, your thoughts, or even make up stories of your own! 
+            You don’t have to worry about being good. Just focus on having fun and write whenever you can.</p>
+        <h3>Play Word Games</h3>
+        <figure>
+            <img src="images/wordgame.jpg" alt="Artwork of a word game.">
+            <figcaption>
+                Image Credit: Clip Art Library. (n.d.). <i>Word Game Clipart</i>. 
+                <a href="https://clipart-library.com/clipart/1518426.htm" target="_blank">Clip Art Library</a>.
+            </figcaption>
+        </figure>
+        <p>Games that focus on using words like Scrabble, word searches, or crossword puzzles are fun and will help your brain think of new words. 
+            These games will help you build up your vocabulary and help you think of new words faster.</p>
+        <h3>Read Aloud</h3>
+        <figure>
+            <img src="images/readingtogether.jpg" alt="Artwork of a woman reading to children.">
+            <figcaption>
+                Image Credit: Clip Art Library. (n.d.). <i>Clip Book Buddies</i>. 
+                <a href="https://clipart-library.com/clipart/clip-book-buddiess-16.htm" target="_blank">Clip Art Library</a>.
+            </figcaption>
+        </figure>  
+        <p>Reading out loud can help a lot with improving at reading! 
+            You can get better at pronouncing words and get feedback from others on how you are doing. 
+            It also helps build confidence!</p> 
+        <h3>Do Your Best!</h3>
+        <p>Don’t be sad if things are hard at first. No one is great at anything that they begin learning! 
+            The more that you practice, the easier it will get. 
+            Make good use of these tips, and you will find that not only will you get better at reading and writing, but you will also have fun while doing it!</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 Bee Literate. All rights reserved.</p>
+        <small>
+            <p>Page generated on: <span id="pageGenerated"></span></p>
+        </small>
+        <script src="pagegenerated.js"></script> <!-- Generates the current time and date when the page was loaded.-->
+    </footer>
 </body>
 
 </html>
+
