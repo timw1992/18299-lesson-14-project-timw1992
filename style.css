@@ -26,7 +26,7 @@ header img { /* Adds space around the logo, centers it, and keeps the size of th
 
 nav ul { /* Aligns and centers the navigation elements at the top of the page. */
     list-style-type: none;
-    background-color: #947e0c;
+    background-color: #b39810;
     overflow: hidden;
     padding: 0;
     margin: 0;
@@ -41,23 +41,23 @@ nav li { /* Adds spacing between navigation items. */
 
 nav a { /* Creates space in the navigation bar at the top of the page so that the links are cluttered. */
     display: block;
-    color: #EBEBEB;
+    color: #121212;
     text-decoration: none;
     padding: 20px;
 }
 
 nav a:hover { /* Changes the color of the navigation element at the top of the page when the mouse hovers over it. */
-    background-color: #94590c;
-    color: #EBEBEB;
+    background-color: #c6a812;
+    color: #121212;
 }
 
 nav .active { /* Indicates the current page being viewed by changing the corresponding navigation element at the top of the page. */
-    background-color: #94170c;
-    color: #EBEBEB;
+    background-color: #eac617;
+    color: #121212;
 }
 
 nav a:visited { /* Prevents the links in the navigation area from turning purple once they've been visited. */
-    color: #EBEBEB;
+    color: #121212;
 }
 
 nav { /* Keeps the navigation elements at the top of the page. */
@@ -128,10 +128,6 @@ figcaption {  /* Same as above, but for figcaptions. Also adjusts font size. */
 
 figure {
     margin: 0;
-}
-
-img {
-
 }
 
 ol, ul { /* Adds space and indents lists. */
@@ -239,4 +235,5 @@ footer {
         padding: 1px;
     }
 
-    /* Tablet viewports appeared fine under the regular desktop style, so I did not make a specific design for it. */
+}   
+/* Tablet viewports appeared fine under the regular desktop style, so I did not make a specific design for it. */
